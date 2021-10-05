@@ -61,10 +61,10 @@ body{
     height: auto;
     overflow-x: hidden;
     width: 100%;
-    background: #171717;
+    background: #202020;
 }
 #header{
-    background:#171717;
+    background:#000010;
     height: 100vh;
     width: 100%;;
     overflow: hidden;
@@ -388,6 +388,8 @@ body{
     opacity: 1;
     transform: scale(1.1);
 }
+
+
 #breaker{
     height: 100vh;
     width: 200%;
