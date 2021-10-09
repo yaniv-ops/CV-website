@@ -35,7 +35,7 @@ def home():
 def plot_csv():
     return send_file('Yaniv_cv_il.docx',
                      mimetype='None',
-                     attachment_filename='yaniv_cv_il',
+                     attachment_filename='yaniv_cv_il.docx',
                      as_attachment=True)
 
 
