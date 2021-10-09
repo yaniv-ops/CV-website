@@ -972,7 +972,7 @@ padding-bottom: 40px;
 .blogs{
     height: 420px;
     width: 40%;
-    margin: 20px;
+    margin: 22px;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
@@ -1027,6 +1027,7 @@ padding-bottom: 40px;
     font-weight: 400;
     height: 80%;
     padding: 30px;
+    margin-top: 40px;
     letter-spacing: 1px;
   }
 .blogs:hover .img{
@@ -1121,6 +1122,7 @@ form{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 15px;
 }
 .input-name{
     width: 40%;
@@ -1133,6 +1135,7 @@ form{
     color: whitesmoke;
     font-family: poppins;
     font-size: 18px;
+    margin: 25px;
 }
 .form-header{
     font-size: 24px;
@@ -1699,19 +1702,23 @@ For devices with smaller width like mobile phone
                 width:auto;
                 align-items: center;
                 position: relative;
+
             }
             .input-line{
                 width: 100%;
                 height: auto;
+                padding:10px 20px;
+                margin:25px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
             }
             .input-name{
                 width: 90%;
                 padding:10px 20px;
-                margin:14px;
+                margin:25px;
                 border-radius: 8px;
                 outline: none;
                 background: #050505;
@@ -1719,6 +1726,7 @@ For devices with smaller width like mobile phone
                 color: whitesmoke;
                 font-family: poppins;
                 font-size: 16px;
+
             }
             .form-header{
                 font-size: 22px;
@@ -1753,11 +1761,11 @@ For devices with smaller width like mobile phone
                 font-family: poppins;
                 font-size: 16px;
             }
-            form button{
+            .form_button{
                 padding:8px 24px;
                 font-family: poppins;
-                font-size:20px;
-                color: whitesmoke;
+                font-size:40px;
+                color: red;
                 opacity: .8;
                 margin: 20px;
                 cursor: pointer;
@@ -1765,7 +1773,7 @@ For devices with smaller width like mobile phone
                 border-radius: 8px;
                 transition: all .4s ease;
             }
-            form button:hover{
+            form_button:hover{
               opacity: 1;
             }
             .contact-info-header{

@@ -83,7 +83,7 @@
                 <div class="firstline"><span class="color">Yaniv </span>Ayalon</div>
                 <div class="secondline">
                 I'm a
-            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Designer.", " Blogger.", " Freelancer." ]'></span>
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Network engineer.", " Pentester.", " Programmer." ]'></span>
             <span class="slash">|</span>
         </div>
                     <div class="contact">
@@ -345,9 +345,8 @@
                         <img src="../static/images/portfolio-first.jpg" alt="portfolio-first">
                      </div>
                      <div class="portfolio-text">
-                         <h2>App Idea</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                         <h2> Blogs-Website</h2>
+                         <p>A site that talks almost about everything that i love in my life, it's full of surprises to subscribers</p>
                          <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                      </div>
                  </div>
@@ -356,9 +355,8 @@
                         <img src="../static/images/portfolio-second.jpg" alt="portfolio-second">
                     </div>
                     <div class="portfolio-text">
-                        <h2>Web Designing</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque placeat minima ad laudantium suscipit
-                             voluptatem ducimus. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <h2>Crypto Alerts</h2>
+                        <p>Get your crypto alerts straight to your mobile phone</p>
                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
@@ -368,9 +366,8 @@
                         <img src="../static/images/portfolio-third.jpg" alt="portfolio-third">
                     </div>
                     <div class="portfolio-text">
-                        <h2>UI Designing</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate expedita eius dignissimos
-                            .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <h2>Automated Job finder </h2>
+                        <p>A robot that will apply your CV file to the appropriate job</p>
                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
@@ -379,9 +376,8 @@
                         <img src="../static/images/portfolio-fourth.jpg" alt="portfolio-fourth">
                     </div>
                     <div class="portfolio-text">
-                        <h2>Wow Graphics</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <h2>Network Configurations</h2>
+                        <p>A library for networking labs including VMware,Cisco, EVE-ng etc.</p>
                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
@@ -427,84 +423,73 @@
                     </div>
                 </div>
                 </div>
-        <div class="blog-header"> Blogs</span>
+        <div class="blog-header"><span> Blogs</span>
             <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
             <div class="blog-content">
                  <div class="blogs">
                      <a href="#">
                      <div class="img">
                          <img src="../static/images/post-one.jpg" alt="blog-one">
-                        <div class="blog-date">8 May,20</div>
+                        <div class="blog-date"> {{ post[0].date }}</div>
                      </div>
                      <div class="blog-text">
-                         <h3>Harleys In Hawaai</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae illum, corrupti quo 
-                             veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum provident? Magnam fugiat voluptas
-                              libero.</p>
+                         <h3>{{ post[0]['title'] }}</h3>
+                         <p> {{ post[0].text }} </p>
                      </div></a>
                  </div>      
                  <div class="blogs">
                     <a href="#">
                     <div class="img">
                         <img src="../static/images/post-two.jpg" alt="blog-two">
-                        <div class="blog-date">16 Jan,20</div>
+                        <div class="blog-date">OCT 6,2021</div>
                     </div>
                     <div class="blog-text">
-                        <h3>Key To Be Productive</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores, 
-                            recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda harum dolorum iusto tenetur
-                             eius eligendi dolor magnam sit!</p>
+                        <h3>{{ post[1].title }}</h3>
+                        <p>{{ post[1].text }}</p>
                     </div></a>
                 </div>      
                 <div class="blogs">
                     <a href="#">
                     <div class="img">
                         <img src="../static/images/post-three.jpg" alt="blog-three">
-                        <div class="blog-date">30 Nov,19</div>
+                        <div class="blog-date">30 SEP,21</div>
                     </div>
                     <div class="blog-text">
-                        <h3>Caffeine Addict</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit 
-                            ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum quas.
-                             Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
+                        <h3>{{ post[2].title }}</h3>
+                        <p> {{ post[2].text }} ?</p>
                     </div></a>
                 </div>
                 <div class="blogs">
                     <a href="#">
                     <div class="img">
                         <img src="../static/images/post-four.jpg" alt="blog-four">
-                        <div class="blog-date">6 Jul,19</div>
+                        <div class="blog-date">{{ post[3].date }}</div>
                     </div>
                     <div class="blog-text">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam vitae,
-                             quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis praesentium quae.
-                              Sed, quibusdam necessitatibus.</p>
+                        <h3>{{ post[3].title }}</h3>
+                        <p>{{ post[3].text }}</p>
                     </div></a>
                 </div>  
                 <div class="blogs">
                     <a href="#">
                     <div class="img">
                         <img src="../static/images/post-five.jpg" alt="blog-five">
-                        <div class="blog-date">1 Jun,19</div>
+                        <div class="blog-date">{{ post[4].date }}</div>
                     </div>
                     <div class="blog-text">
-                        <h3>Work From Home</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem 
-                            dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque illum, soluta hic minus 
-                            sint explicabo..</p>
+                        <h3>{{ post[4].title }}</h3>
+                        <p>{{ post[4].text }}</p>
                     </div></a>
                 </div>  
                 <div class="blogs">
                     <a href="#">
                     <div class="img">
                         <img src="../static/images/post-six.jpg" alt="blog-six">
-                        <div class="blog-date">28 Feb,19</div>
+                        <div class="blog-date">{{ post[5].date }}</div>
                     </div>
                     <div class="blog-text">
-                        <h3>Business Trip</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga ratione, unde, 
-                            ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut rerum nam.</p>
+                        <h3>{{ post[5].title }}</h3>
+                        <p>{{ post[5].text }}</p>
                     </div></a>
                 </div>        
             </div>
@@ -557,14 +542,17 @@
                  <div class="form-header">
                      Message Me
                  </div>
-                 <form id="myForm" action="#">
-                    <div class="input-line">
-                        <input  id="name" type="text" placeholder="Name" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
+                 <form name="SentMessage" id="myForm" action="{{ url_for('home') }}" method="post" novalidate>
+                     {{ form.hidden_tag() }}
+                    <div>
+                        <h3>{{ form.name.label(class_='input-name') }}<br>{{ form.name(size=25, class_='input-line') }}</h3>
+                    </div>
+                    <div>
+                        <h3>{{ form.e_mail.label(class='input-name') }} <br>{{ form.name(size=25, class='input-line') }}</h3>
                     </div>
                     <input type="text" id="subject" placeholder="subject" class="input-subject">
                     <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="button" id ="submit" value="send">Submit</button>
+                     {{ form.submit(class_='btn btn-primary') }}
                  </form>
                
              </div>
