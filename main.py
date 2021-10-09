@@ -33,8 +33,8 @@ def home():
 
 @app.route('/getPlotCSV') # this is a job for GET, not POST
 def plot_csv():
-    return send_file('yaniv_cv_il.pdf',
-                     mimetype='text/pdf',
+    return send_file('Yaniv_cv_il.docx',
+                     mimetype='None',
                      attachment_filename='yaniv_cv_il',
                      as_attachment=True)
 
