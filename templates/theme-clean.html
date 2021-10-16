@@ -398,17 +398,27 @@
                  <div class="form-header">
                      Message Me
                  </div>
-                 <form name="SentMessage" id="myForm" action="{{ url_for('home') }}" method="post" novalidate>
+                 <form name="SentMessage" id="myForm" action="{{ url_for('home') }}" method="POST" novalidate>
                      {{ form.hidden_tag() }}
                     <div>
-                        <h3>{{ form.name.label(class_='input-name') }}<br>{{ form.name(size=25, class_='input-line') }}</h3>
+                        <h6>
+                            {{ form.name.label(class_="input-name" ) }} {{ form.name(size=25, class_="line-check") }}
+                            {% for err in form.name.errors %}
+					        <span style="color:red">{{ err }}</span>
+				            {% endfor %}
+                        </h6>
                     </div>
                     <div>
-                        <h3>{{ form.e_mail.label(class='input-name') }} <br>{{ form.name(size=25, class='input-line') }}</h3>
+                        <h6>
+                             {{ form.e_mail.label(class_="input-name") }} {{ form.e_mail(size=25, class_="line-check") }}
+                            {% for err in form.e_mail.errors %}
+					        <span style="color:red">{{ err }}</span>
+				            {% endfor %}
+                        </h6>
                     </div>
                     <input type="text" id="subject" placeholder="subject" class="input-subject">
                     <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                     {{ form.submit(class_='btn btn-primary') }}
+                     {{ form.submit(class_="form_button") }}
                  </form>
                
              </div>

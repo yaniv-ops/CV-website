@@ -19,7 +19,7 @@ app.config['SECRET_KEY'] = "MY_SECRET"
 msg_sent = 'msg has sent'
 class NamerForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
-    e_mail = EmailField('Email', validators=[DataRequired(), Email()])
+    e_mail = EmailField('Email ', validators=[DataRequired(), Email()])
     message = StringField('Write your message here', validators=[DataRequired()])
     submit = SubmitField('Send message')
 
