@@ -1444,14 +1444,6 @@ For devices with smaller width like mobile phone
         padding-right: 0px;
         width: auto;
 
-    #navigation-bar{
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    z-index: 3;
-    padding: 10px;
-    background:transparent;
-    overflow: hidden;
     
     }
     #about-content{
