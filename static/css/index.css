@@ -1393,7 +1393,8 @@ For devices with smaller width like mobile phone
     .header-image{
         float: right;
         height: 80%;
-        width: 70%;
+        width: 60%;
+        padding-left: 100%;
     }
     .social-media-links{
         width: 100%;
