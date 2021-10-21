@@ -1392,8 +1392,8 @@ For devices with smaller width like mobile phone
     }
     .header-image{
         float: right;
-        height: auto;
-        width: 0%;   
+        height: 80%;
+        width: 70%;
     }
     .social-media-links{
         width: 100%;
@@ -1442,6 +1442,15 @@ For devices with smaller width like mobile phone
         height: auto;
         padding-right: 0px;
         width: auto;
+
+    #navigation-bar{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 3;
+    padding: 10px;
+    background:transparent;
+    overflow: hidden;
     
     }
     #about-content{
