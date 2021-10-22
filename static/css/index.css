@@ -1136,9 +1136,9 @@ form{
     margin: 15px;
 }
 .input-name{
-    width: 40%;
-    padding:10px 20px;
-    margin:14px;
+    width: 50%;
+    padding:2px 2px;
+    margin:40px;
     border-radius: 8px;
     outline: none;
     background: #050505;
@@ -1146,7 +1146,7 @@ form{
     color: whitesmoke;
     font-family: poppins;
     font-size: 18px;
-    margin: 25px;
+
 }
 .form-header{
     font-size: 24px;
@@ -1719,6 +1719,8 @@ For devices with smaller width like mobile phone
                 align-items: center;
                 position: relative;
 
+
+
             }
             .input-line{
                 width: 100%;
@@ -1733,8 +1735,8 @@ For devices with smaller width like mobile phone
             }
             .input-name{
                 width: 90%;
-                padding:10px 20px;
-                margin:25px;
+
+                margin:35px;
                 border-radius: 8px;
                 outline: none;
                 background: #050505;
@@ -1778,10 +1780,10 @@ For devices with smaller width like mobile phone
                 font-size: 16px;
             }
             .form_button{
-                padding:8px 24px;
+                padding:16px 34px;
                 font-family: poppins;
-                font-size: 1px;
-                color: red;
+                font-size: 12px;
+                color: whitesmoke;
                 opacity: .8;
                 margin: 20px;
                 cursor: pointer;
@@ -2214,7 +2216,7 @@ for tabs and large phones
             .input-name{
                 width: 100%;
                 padding: 5px 10px;
-                margin: 28px;
+                margin: 10px;
                 text-align: left;
                 border-radius: 8px;
                 outline: none;
@@ -2222,7 +2224,7 @@ for tabs and large phones
                 border:none;
                 color: whitesmoke;
                 font-family: poppins;
-                font-size: 12px;
+                font-size: 18px;
             }
             .form-header{
                 font-size: 18px;
@@ -2531,6 +2533,7 @@ for tabs and large phones
         position: relative;
     }
     .input-line{
+
         width: 100%;
         height: auto;
         display: flex;
@@ -2538,18 +2541,22 @@ for tabs and large phones
         align-items: center;
         justify-content: center;
     }
+
     .input-name{
-        width: 60%;
-        padding:10px 20px;
-        margin:14px;
-        border-radius: 8px;
-        outline: none;
-        background: #050505;
-        border:none;
-        color: whitesmoke;
-        font-family: poppins;
-        font-size: 18px;
+                width: 100%;
+                margin: 40px;
+                text-align: left;
+                border-radius: 8px;
+                outline: none;
+                background: #050505;
+                border:none;
+                color: whitesmoke;
+                font-family: poppins;
+                font-size: 14px;
+
+
     }
+
     .form-header{
         font-size: 24px;
         font-family: poppins;
@@ -2557,6 +2564,8 @@ for tabs and large phones
         color: whitesmoke;
         padding: 20px;
         padding-top: 0px;
+
+
     }
     .input-subject{
         width: 60%;
