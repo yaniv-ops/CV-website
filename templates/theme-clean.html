@@ -399,7 +399,7 @@
                      Message Me
                  </div>
                  <form name="SentMessage" id="myForm" action="{{ url_for('home') }}" method="POST" novalidate>
-                     {{ form.hidden_tag() }}
+                      {{ form.hidden_tag() }}
                     <div>
                         <h4>
                             {{ form.name.label(class_="input-name" ) }} {{ form.name(size=25, class_="line-check") }}
@@ -416,8 +416,12 @@
 				            {% endfor %}
                         </h4>
                     </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
+                        {{ form.text_area(placeholder="message", id="body", class_="input-textarea") }}
+                        {% for err in form.text_area.errors %}
+                            <span style="color:red">{{ err }}</span>
+                        {% endfor %}
+                     <input type="text" id="subject" placeholder="subject" class="input-subject">
+                   <!-- <textarea id ="body" class="input-textarea" placeholder="message" novalidate></textarea> --!>
                      {{ form.submit(class_="form_button") }}
                  </form>
                
