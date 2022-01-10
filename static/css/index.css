@@ -363,6 +363,12 @@ body{
     opacity: 1;
     letter-spacing: 10px;
 }
+
+#members-link{
+    color: red;
+
+
+}
 .contact{
     display: flex;
     position: absolute;

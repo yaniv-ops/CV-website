@@ -62,6 +62,9 @@ def plot_csv():
                      as_attachment=True)
 
 
+@app.route('/Members')
+def members():
+    return render_template('members.html')
 
 
 
